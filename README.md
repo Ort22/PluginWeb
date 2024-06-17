@@ -1,5 +1,9 @@
 # PluginWeb
-Probar la Extensión
+La extensión se ejecutará automaticamente al abrir algun sitio web.
+
+El codigo .json se recibira en algun servidor local o en la nube, solo debes cambiar el link en los archivos **'popup.js'** y **'content.js'**.
+
+**para probar la Extensión:**
 
 **1.- Google Chrome:**
 

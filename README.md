@@ -1,9 +1,13 @@
-# PluginWeb
-La extensión se ejecutará automaticamente al abrir algun sitio web.
+# Image URL Extractor
 
-El codigo .json se recibira en algun servidor local o en la nube, solo debes cambiar el link en los archivos **'popup.js'** y **'content.js'**.
+Extrae los Urls de las imagenes de cualquier sitio web y los almacena en formato **.JSON**, después los envia a través de una petición de **Lambda AWS** para que finalmente **Lambda AWS** responda con los mismos Urls.
 
-**para probar la Extensión:**
+## **Para probar la Extensión:**
+
+**a) Configura la función de Lambda AWS**
+- Crea una nueva funión en Lambda y dale el nombre que desees, por ejemplo : 'url-extractor'.
+- Asegurate que el lenguaje de la función sea **Python 3.12** y la arquitectura sea **x86_64**.
+- Copia y pega el codigo de la Función de lambda que esta en este repositorio.
 
 **1.- Google Chrome:**
 

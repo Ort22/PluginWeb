@@ -1,21 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Extractor de Imágenes Automático",
+  "name": "Image URL Extractor",
   "version": "1.0",
-  "description": "Extrae los URLs de las imágenes de la página web y los envía a un servidor automáticamente.",
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "storage"
-  ],
-  "background": {
-    "service_worker": "background.js"
+  "description": "Extracts image URLs from the current page",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+      "default_popup": "popup.html"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
-  "host_permissions": ["<all_urls>"]
+  "background": {
+      "service_worker": "background.js"
+  }
 }
